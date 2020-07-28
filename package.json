@@ -4,7 +4,12 @@
   "description": "",
   "main": " ",
   "scripts": {
-    "test": " "
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "stylelint \"source/less/**/*.less\" --syntax less",
+    "test": "npm run editorconfig && npm run stylelint",
+    "build": "gulp build",
+    "start": "gulp start",
+    "startsource": "gulp startsource"
   },
   "author": "",
   "license": "",
@@ -12,9 +17,17 @@
     "normalize.css": "^4.1.1"
   },
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-less": "^3.0.5",
+    "@htmlacademy/editorconfig-cli": "1.x",
+    "autoprefixer": "9.5.x",
+    "browser-sync": "2.26.x",
+    "gulp": "4.0.x",
+    "gulp-less": "4.0.x",
+    "gulp-csso": "^4.0.1",
+    "gulp-plumber": "1.2.x",
     "gulp-postcss": "^6.1.0",
-    "autoprefixer": "^6.3.3"
+    "gulp-rename": "^2.0.0",
+    "gulp-sourcemaps": "2.6.x",
+    "stylelint": "10.1.x",
+    "stylelint-config-htmlacademy": "0.1.x"
   }
 }
