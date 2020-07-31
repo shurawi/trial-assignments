@@ -1,14 +1,47 @@
-@import (inline) "../node_modules/normalize.css/normalize.css";
+* {
+  box-sizing: border-box;
+}
 
-@import "_fonts";
+@font-face {
+  font-family: "circe_300";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/circe/circe_300.woff2") format("woff2"),
+       url("../fonts/circe/circe_300.woff.woff") format("woff");
+}
 
-html {
-  font-size: 62.5%;
+@font-face {
+  font-family: "circe_600";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/circe/circe_600.woff2") format("woff2"),
+       url("../fonts/circe/circe_600.woff.woff") format("woff");
+}
+
+@font-face {
+  font-family: "circe_700";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/circe/circe_700.woff2") format("woff2"),
+       url("../fonts/circe/circe_700.woff.woff") format("woff");
 }
 
 body {
-  font: 1.65rem/1.2 Circe, sans-serif;
-  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 320px;
+  font-family: "circe_300", "Arial", sans-serif;
+  overflow-x: hidden;
 }
 
-@import "blocks/layout";
+p {
+  margin: 0;
+  padding: 0;
+}

@@ -8,6 +8,7 @@ var sourcemap = require("gulp-sourcemaps");
 var rename = require("gulp-rename");
 var autoprefixer = require('autoprefixer');
 var csso = require("gulp-csso");
+var imagemin = require("gulp-imagemin");
 var server = require("browser-sync").create();
 
 gulp.task("csssource", function () {
@@ -36,6 +37,16 @@ gulp.task("serversource", function () {
 
   gulp.watch("source/less/**/*.less", gulp.series("csssource"));
   gulp.watch("source/*.html").on("change", server.reload);
+});
+
+gulp.task("images", function () {
+  return gulp.src("source/img/**/*.{png,jpg,svg}")
+    .pipe(imagemin([
+      imagemin.optipng({optimizationLevel: 3}),
+      imagemin.mozjpeg({progressive: true}),
+      imagemin.svgo()
+    ]))
+    .pipe(gulp.dest("source/img"));
 });
 
 gulp.task("startsource", gulp.series("csssource", "serversource"));
