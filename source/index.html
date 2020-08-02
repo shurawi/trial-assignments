@@ -9,55 +9,88 @@
 </head>
 <body>
   <section class="card">
-    <picture class="card__pic">
-      <img class="card__img" src="img/shirt-medicine-green--mobile.jpg" width="242" height="351" alt="woman's green check shirt">
-    </picture>
-    <nav class="card__nav card__nav--breadcrumbs">
-      <ul class="card__list card__list--breadcrumbs">
-        <li class="card__item card__item--breadcrumbs">
-          <a class="card__ref card__ref--breadcrumbs" href="#">Каталог</a>
-        </li>
-        <li class="card__item card__item--breadcrumbs">
-          <a class="card__ref card__ref--breadcrumbs" href="#">Женщинам</a>
-        </li>
-        <li class="card__item card__item--breadcrumbs">
-          <a class="card__ref card__ref--breadcrumbs" href="#">...</a>
-        </li>
-        <li class="card__item card__item--breadcrumbs">
-          <a class="card__ref card__ref--breadcrumbs" href="#">Кроссовки</a>
-        </li>
-      </ul>
-    </nav>
-    <nav class="card__nav card__nav--kind">
-      <ul class="card__list card__list--kind">
-        <li class="card__item card__item--kind">
-          <a class="card__ref card__ref--kind" href="#">Рубашки Medicine</a>
-        </li>
-        <li class="card__item card__item--kind">
-          <a class="card__ref card__ref--kind" href="#">Все модели Medicine</a>
-        </li>
-        <li class="card__item card__item--kind">
-          <a class="card__ref card__ref--kind" href="#">Рубашки</a>
-        </li>
-      </ul>
-    </nav>
-    <div class="card__price">
-      <p class="card__cost card__cost--old">2 699</p>
-      <p class="card__cost card__cost--new">2 499 &#8381;</p>
-      <p class="card__cost card__cost--promo">2 227 &#8381; —<span class="card__span"> с промокодом</span></p>
+    <div class="card__mainimg">
+      <picture class="card__pic">
+        <source srcset="img/shirt-medicine-green--tablet.jpg" media="(min-width: 767px)">
+        <img class="card__img" src="img/shirt-medicine-green--mobile.jpg" width="242" height="351" alt="woman's green check shirt">
+      </picture>
     </div>
-    <div class="card__marker">
-      <p class="card__paragraph card__paragraph--marker card__paragraph--available">В наличии в магазине <a class="card__ref card__ref--kind" href="#">Lamoda</a></p>
-      <p class="card__paragraph card__paragraph--marker card__paragraph--delivery">Бесплатная доставка</p>
+    <div class="card__wrap">
+      <nav class="card__nav card__nav--breadcrumbs">
+        <ul class="card__list card__list--breadcrumbs">
+          <li class="card__item card__item--breadcrumbs">
+            <a class="card__ref card__ref--breadcrumbs" href="#">Каталог</a>
+          </li>
+          <li class="card__item card__item--breadcrumbs">
+            <a class="card__ref card__ref--breadcrumbs" href="#">Женщинам</a>
+          </li>
+          <li class="card__item card__item--breadcrumbs card__item--dots">
+            <a class="card__ref card__ref--breadcrumbs" href="#">...</a>
+          </li>
+          <li class="card__item card__item--breadcrumbs card__item--afterdots">
+            <a class="card__ref card__ref--breadcrumbs" href="#">Обувь</a>
+          </li>
+          <li class="card__item card__item--breadcrumbs">
+            <a class="card__ref card__ref--breadcrumbs" href="#">Кроссовки</a>
+          </li>
+        </ul>
+      </nav>
+      <h2 class="card__title">рубашка medicine</h2>
+      <nav class="card__nav card__nav--kind">
+        <ul class="card__list card__list--kind">
+          <li class="card__item card__item--kind">
+            <a class="card__ref card__ref--kind" href="#">Рубашки Medicine</a>
+          </li>
+          <li class="card__item card__item--kind">
+            <a class="card__ref card__ref--kind" href="#">Все модели Medicine</a>
+          </li>
+          <li class="card__item card__item--kind">
+            <a class="card__ref card__ref--kind" href="#">Рубашки</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="card__price">
+        <p class="card__cost card__cost--old">2 699</p>
+        <p class="card__cost card__cost--new">2 499 &#8381;</p>
+        <p class="card__cost card__cost--promo">2 227 &#8381; —<span class="card__span"> с промокодом</span></p>
+      </div>
+      <div class="card__marker">
+        <p class="card__paragraph card__paragraph--marker card__paragraph--available">В наличии в магазине <a class="card__ref card__ref--kind" href="#">Lamoda</a></p>
+        <p class="card__paragraph card__paragraph--marker card__paragraph--delivery">Бесплатная доставка</p>
+      </div>
+      <div class="card__info">
+        <div class="card__description">
+          <p class="card__paragraph card__paragraph--description">Рубашка Medicine выполнена из вискозной ткани с клетчатым узором.</p>
+          <p class="card__paragraph card__paragraph--description">Детали: прямой крой; отложной воротник; планка и манжеты на пуговицах;<br> карман на груди.</p>
+        </div>
+        <div class="card__control">
+          <button class="card__btn" type="button" name="card">подробнее</button>
+          <a class="card__link card__link--shop" href="#">В магазин</a>
+          <a class="card__link card__link--favorites" href="#">В избранное</a>
+        </div>
+      </div>
+      <div class="card__social social">
+        <nav class="social__nav">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--b" href="#">link in b</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--gp" href="#">link in facebook</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--fb" href="#">link in google plus</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--tw" href="#">link in twiter</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="social__count">
+          <span class="social__span">123</span>
+        </div>
+      </div>
     </div>
-    <div class="card__description">
-      <p class="card__paragraph card__paragraph--description">Рубашка Medicine выполнена из вискозной ткани с клетчатым узором.</p>
-      <p class="card__paragraph card__paragraph--description">Детали: прямой крой; отложной воротник; планка и манжеты на пуговицах;</p>
-      <p class="card__paragraph card__paragraph--description">карман на груди.</p>
-    </div>
-    <button class="card__btn" type="button" name="card">подробнее</button>
-    <a class="card__link card__link--shop" href="#">В магазин</a>
-    <a class="card__link card__link--favorites" href="#">В избранное</a>
   </section>
 </body>
 </html>

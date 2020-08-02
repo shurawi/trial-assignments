@@ -1,28 +1,86 @@
 .card {
+  width: 100%;
   padding-bottom: 36px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 45px;
+    display: flex;
+  }
 }
+
+.card__wrap {
+  @media (min-width: @tablet-width) {
+    width: 45%;
+  }
+}
+
+.card__mainimg {
+  @media (min-width: @tablet-width) {
+    flex-grow: 1;
+    }
+  }
 
 .card__pic {
   display: flex;
   justify-content: center;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    top: 25px;
+    left: 12%;
+    }
+  }
+
+.card__img {
+  width: 242px;
+  height: 351px;
+
+  @media (min-width: @tablet-width) {
+    width: 290px;
+    height: 420px;
+  }
+}
+
+.card__title {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    margin: 18px 0 0 8%;
+    display: block;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-family: "circe_600", "Arial", sans-serif;
+    letter-spacing: 1.5px;
+    color: #131313;
+  }
 }
 
 .card__list {
-  margin: 0 13px;
+  margin: 0 calc(3% + 3px);
   padding: 0;
   display: flex;
   list-style-type: none;
+  flex-wrap: wrap;
 }
 
 .card__list--breadcrumbs {
-  margin: 3px 19px 0 21px;
+  margin: 3px calc(6% - 1px) 0 calc(6% + 1px);
   justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    margin: 22px 0 0 8%;
+    justify-content: flex-start;
+  }
 }
 
 .card__list--kind {
   margin-top: 11px;
   justify-content: flex-start;
-  flex-wrap: wrap;
+
+  @media (min-width: @tablet-width) {
+    margin: 11px 0 0 8%;
+  }
 }
 
 .card__item {
@@ -32,6 +90,27 @@
 
 .card__item--breadcrumbs {
   font-family: "circe_600", "Arial", sans-serif;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 12% 4px 0;
+    font-size: 13px;
+    line-height: 16px;
+    font-family: "circe_300", "Arial", sans-serif;
+  }
+}
+
+.card__item--dots {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.card__item--afterdots {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
 }
 
 .card__item--kind {
@@ -56,6 +135,10 @@
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
+
+  @media (min-width: @tablet-width) {
+    margin: 11px 0 0 8.5%;
+  }
 }
 
 .card__cost {
@@ -65,6 +148,10 @@
   line-height: 30px;
   letter-spacing: 0.8px;
   font-family: "circe_600", "Arial", sans-serif;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 4px;
+  }
 }
 
 .card__cost--old {
@@ -102,8 +189,29 @@
 
 .card__marker {
   margin-top: 13px;
-  padding: 8px 43px 7px;
+  padding: 8px 13.5% 7px;
   background-color: #f4f4f4;
+
+  @media (min-width: @tablet-width) {
+    margin: 16px 8% 0 7%;
+    padding-left: 15.5%;
+  }
+}
+
+.card__info {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.card__description {
+  margin: 20px 24px 0 14px;
+
+  @media (min-width: @tablet-width) {
+    margin: 24px 7.5% 0 8.8%;
+    order: 2;
+  }
 }
 
 .card__paragraph {
@@ -148,10 +256,22 @@
 .card__paragraph--description {
   font-size: 12px;
   line-height: 18px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 13px;
+
+    br {
+      display: none;
+    }
+  }
 }
 
-.card__description {
-  margin: 20px 24px 0 14px;
+.card__control {
+  @media (min-width: @tablet-width) {
+    margin: 29px 0 0 8%;
+    display: flex;
+    order: 1;
+  }
 }
 
 .card__btn {
@@ -159,7 +279,7 @@
   width: 100%;
   height: 39px;
   margin-top: 24px;
-  padding-left: 13px;
+  padding-left: calc(3% + 3px);
   font-size: 13px;
   line-height: 41px;
   text-align: left;
@@ -183,10 +303,14 @@
     height: 7px;
     background: url("../img/icon__check.svg") no-repeat;
   }
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .card__link {
-  margin: 0 16px;
+  margin: 0 calc(3% + 6px);
   display: block;
   font-size: 13px;
   line-height: 24px;
@@ -203,6 +327,11 @@
   padding: 10px 0 8px;
   background-color: #006be5;
   color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    width: 44%;
+    margin: 0 3.3% 0 0;
+  }
 }
 
 .card__link--favorites {
@@ -222,5 +351,14 @@
     width: 18px;
     height: 24px;
     background: url("../img/icon__favorites.svg") no-repeat;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 44%;
+    margin: 0;
+
+    &::after {
+      display: none;
+    }
   }
 }
