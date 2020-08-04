@@ -1,0 +1,27 @@
+.slider {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 25px;
+    right: 74%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.slider__pic {
+  margin-bottom: 13px;
+}
+
+.slider__btn {
+  align-self: center;
+  width: 43px;
+  height: 30px;
+  background:url(../img/icon__down.svg) no-repeat, #ffffff;
+  background-size: 11px 7px;
+  background-position: center;
+  border: 1px solid #ebebeb;
+  outline: none;
+  cursor: pointer;
+}

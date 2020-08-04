@@ -3,8 +3,11 @@
   padding-bottom: 36px;
 
   @media (min-width: @tablet-width) {
+    min-width: 768px;
+    max-width: 998px;
     padding-bottom: 45px;
     display: flex;
+    justify-content: center;
   }
 }
 
@@ -16,6 +19,7 @@
 
 .card__mainimg {
   @media (min-width: @tablet-width) {
+    position: relative;
     flex-grow: 1;
     }
   }
