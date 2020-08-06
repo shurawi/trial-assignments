@@ -8,10 +8,28 @@
     display: flex;
     flex-direction: column;
   }
+
+  @media (min-width: @desktop-width) {
+    right: 77%;
+  }
 }
 
 .slider__pic {
   margin-bottom: 13px;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 23px;
+  }
+}
+
+.slider__img {
+  width: 80px;
+  height: 116px;
+
+  @media (min-width: @desktop-width) {
+    width: 90px;
+    height: 130px;
+  }
 }
 
 .slider__btn {

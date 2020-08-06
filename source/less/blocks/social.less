@@ -7,10 +7,36 @@
   }
 }
 
+.social__nav {
+  @media (min-width: @desktop-width) {
+    margin: 40px 0 0 9%;
+    display: flex;
+  }
+}
+
+.social__text {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: inline-block;
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: uppercase;
+    font-family: "circe_600", "Arial", sans-serif;
+    letter-spacing: 0.5px;
+    color: #131313;
+  }
+}
+
 .social__list {
   margin: 14px 0 0 8%;
   display: flex;
   list-style-type: none;
+
+  @media (min-width: @desktop-width) {
+    margin: -8px 0 0 5%;
+    flex-grow: 1;
+  }
 }
 
 .social__item {
@@ -68,6 +94,11 @@
   width: 45px;
   height: 30px;
   background: url("../img/icon__count.svg") no-repeat;
+
+  @media (min-width: @desktop-width) {
+    top: -7px;
+    right: 25%;
+  }
 }
 
 .social__span {
